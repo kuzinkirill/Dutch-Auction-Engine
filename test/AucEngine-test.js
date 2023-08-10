@@ -91,7 +91,7 @@ describe("AucEngine", function () {
     })
   })
 
-  describe("createAuction", function () {
+  describe("only owner is able to withdraw", function () {
     it("should allow owner to withdraw funds", async function () {
       const initialBalance = await ethers.provider.getBalance(owner.address);
   
